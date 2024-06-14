@@ -10,16 +10,17 @@
     text-align: center;
     position: relative;
 }
-/*.testi-img .circle {
-    height: 360px;
-    width: 360px;
+/* .testi-img .circle {
+    height: 300px;
+    width: 300px;
     background-color: #fb9c9a;
     position: absolute;
     border-radius: 0%;
     left: 0;
     bottom: 0;
     transition: all 0.5s ease;
-}*/
+    overflow:hidden;
+} */
 .testi-img .img-box-inner{
     position: relative;
     border-radius: 0 0 0 0;
@@ -60,12 +61,12 @@
     .testi-img .img-box{
         max-width: 300px;
     }
-    .testi-img .circle{
+/*    .testi-img .circle{
         height: 300px;
         width: 300px;
-    }
+    } */
     .testi-img .img-box-inner{
-        border-radius: 0 0 150px 150px;
+        border-radius: 0 0 0 0;
     }
     .testi-img .img-box-inner img{
         max-width: 230px;
