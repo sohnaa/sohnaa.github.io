@@ -1,0 +1,221 @@
+/* Typography (body) */
+  @font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_n4.bb07ca19f1ff19b6ca9f72c55add75de6c568354.woff2?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=ef0db800509b0f37265f6085e7666bc2049b00b51a3f6bb8f4580e2e604750ee") format("woff2"),
+       url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_n4.4d765821604d183de75a5db211fbf52345d31d03.woff?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=feab863dd45a2f4f6149bc6fa78ade45b2726686be8b0246acbd835cf768a063") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_i4.358608bc9fd20032ea31f67c9b49a3a2e4a48dae.woff2?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=f4fc3c7911c58fc09c86a078fd2ac20a2dcda0f95e0aa7d1d5dd5ec2e3d68ffb") format("woff2"),
+       url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_i4.1f8b4021d296fa19b054165ade25b4bd49762958.woff?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=3f0947cdc2fe88874d41f5685513ab365f89385572e658cc239e16f406513628") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_n7.056072ee3b628844e0d3cfd1302b388ff04d73c5.woff2?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=f8b39bf62f35c2f865276c20c8ebaf6ac1601cda78ff1330c5a372d1661f3d08") format("woff2"),
+       url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_n7.a1051732651f65fa021acdbba00430646a06da99.woff?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=e04a9b2ab33932f99ab593fe5b0bd675c03712e2faafae2c11cc21e4684e32a6") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_i7.4003c3d58093a9ddde91efb4361a41fc871d014a.woff2?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=792d639ed3d82a9e182b014b8a5afc2530d13f5e48b190abedfae71387346f4b") format("woff2"),
+       url("//sohnaa.com/cdn/fonts/gill_sans_nova/gillsansnova_i7.8a79e427089944035a0d7b50c964cc4e222af9b0.woff?h1=YzI2ZGJlLTIuYWNjb3VudC5teXNob3BpZnkuY29t&h2=c29obmFhLmNvbQ&hmac=3298dfccf0314d02c0573bbba481905cc751f0187c49b135c27323ed04dfe0e1") format("woff");
+}
+
+:root {
+    /* Container */
+    --container-max-width: 100%;
+    --container-xxs-max-width: 27.5rem; /* 440px */
+    --container-xs-max-width: 42.5rem; /* 680px */
+    --container-sm-max-width: 61.25rem; /* 980px */
+    --container-md-max-width: 71.875rem; /* 1150px */
+    /* --container-lg-max-width: 78.75rem; */ 
+    --container-lg-max-width: 100%; /* 1260px */
+    --container-xl-max-width: 85rem; /* 1360px */
+    --container-gutter: 1.25rem;
+
+    --section-with-border-vertical-spacing: 2.5rem;
+    --section-with-border-vertical-spacing-tight:2.5rem;
+    --section-without-border-vertical-spacing:3.75rem;
+    --section-without-border-vertical-spacing-tight:3.75rem;
+
+    --section-stack-gap:3rem;
+    --section-stack-gap-tight: 2.25rem;
+
+    /* Form settings */
+    --form-gap: 1.25rem; /* Gap between fieldset and submit button */
+    --fieldset-gap: 1rem; /* Gap between each form input within a fieldset */
+    --form-control-gap: 0.625rem; /* Gap between input and label (ignored for floating label) */
+    --checkbox-control-gap: 0.75rem; /* Horizontal gap between checkbox and its associated label */
+    --input-padding-block: 0.65rem; /* Vertical padding for input, textarea and native select */
+    --input-padding-inline: 0.8rem; /* Horizontal padding for input, textarea and native select */
+    --checkbox-size: 0.875rem; /* Size (width and height) for checkbox */
+
+    /* Other sizes */
+    --sticky-area-height: calc(var(--announcement-bar-is-sticky, 0) * var(--announcement-bar-height, 0px) + var(--header-is-sticky, 0) * var(--header-height, 0px));
+
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+
+    /**
+     * ---------------------------------------------------------------------
+     * TYPOGRAPHY
+     * ---------------------------------------------------------------------
+     */
+
+    /* Font properties */
+    --heading-font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-text-transform: uppercase;
+    --heading-letter-spacing: 0.18em;
+    --text-font-family: "Gill Sans Nova", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-letter-spacing: 0.0em;
+    --button-font: var(--text-font-style) var(--text-font-weight) var(--text-sm) / 1.65 var(--text-font-family);
+    --button-text-transform: uppercase;
+    --button-letter-spacing: 0.03em;
+
+    /* Font sizes */--text-heading-size-factor: 1;
+    --text-h1: max(0.6875rem, clamp(1.375rem, 1.146341463414634rem + 0.975609756097561vw, 2rem) * var(--text-heading-size-factor));
+    --text-h2: max(0.6875rem, clamp(1.25rem, 1.0670731707317074rem + 0.7804878048780488vw, 1.75rem) * var(--text-heading-size-factor));
+    --text-h3: max(0.6875rem, clamp(1.125rem, 1.0335365853658536rem + 0.3902439024390244vw, 1.375rem) * var(--text-heading-size-factor));
+    --text-h4: max(0.6875rem, clamp(1rem, 0.9542682926829268rem + 0.1951219512195122vw, 1.125rem) * var(--text-heading-size-factor));
+    --text-h5: calc(0.875rem * var(--text-heading-size-factor));
+    --text-h6: calc(0.75rem * var(--text-heading-size-factor));
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.8125rem;
+    --text-base: 0.875rem;
+    --text-lg: 1.0rem;
+    --text-xl: 1.25rem;
+
+    /**
+     * ---------------------------------------------------------------------
+     * COLORS
+     * ---------------------------------------------------------------------
+     */
+
+    /* Color settings */--accent: 28 28 28;
+    --text-primary: 28 28 28;
+    --background-primary: 255 255 255;
+    --background-secondary: 255 255 255;
+    --border-color: 221 221 221;
+    --page-overlay: 0 0 0 / 0.4;
+
+    /* Button colors */
+    --button-background-primary: 28 28 28;
+    --button-text-primary: 255 255 255;
+
+    /* Status colors */
+    --success-background: 212 227 203;
+    --success-text: 48 122 7;
+    --warning-background: 253 241 224;
+    --warning-text: 237 138 0;
+    --error-background: 243 204 204;
+    --error-text: 203 43 43;
+
+    /* Product colors */
+    --on-sale-text: 227 44 43;
+    --on-sale-badge-background: 227 44 43;
+    --on-sale-badge-text: 255 255 255;
+    --sold-out-badge-background: 239 239 239;
+    --sold-out-badge-text: 0 0 0 / 0.65;
+    --custom-badge-background: 28 28 28;
+    --custom-badge-text: 255 255 255;
+    --star-color: 255 204 0;
+
+    /* Header colors */--header-background: 255 255 255;
+    --header-text: 28 28 28;
+    --header-border-color: 221 221 221;
+
+    /* Footer colors */--footer-background: 255 255 255;
+    --footer-text: 28 28 28;
+    --footer-border-color: 221 221 221;
+
+    /* Modal colors */--modal-background: 255 255 255;
+    --modal-text: 28 28 28;
+    --modal-border-color: 221 221 221;
+
+    /* Drawer colors (reuse the same as modal) */
+    --drawer-background: 255 255 255;
+    --drawer-text: 28 28 28;
+    --drawer-border-color: 221 221 221;
+
+    /* Popover background (uses the primary background) */
+    --popover-background: 255 255 255;
+    --popover-text: 28 28 28;
+    --popover-border-color: 221 221 221;
+
+    /* Rounded variables (used for border radius) */
+    --rounded-full: 9999px;
+    --button-border-radius: 0.0rem;
+    --input-border-radius: 0.0rem;
+
+    /* Box shadow */
+    --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.05);
+    --shadow: 0 5px 15px rgb(0 0 0 / 0.05);
+    --shadow-md: 0 5px 30px rgb(0 0 0 / 0.05);
+    --shadow-block: px px px rgb(var(--text-primary) / 0.0);
+
+    /**
+     * ---------------------------------------------------------------------
+     * OTHER
+     * ---------------------------------------------------------------------
+     */
+
+    --checkmark-svg-url: url(//sohnaa.com/cdn/shop/t/22/assets/checkmark.svg?v=77552481021870063511717754176);
+    --cursor-zoom-in-svg-url: url(//sohnaa.com/cdn/shop/t/22/assets/cursor-zoom-in.svg?v=112480252220988712521717754176);
+  }
+
+  [dir="rtl"]:root {
+    /* RTL support */
+    --transform-logical-flip: -1;
+    --transform-origin-start: right;
+    --transform-origin-end: left;
+  }
+
+  @media screen and (min-width: 700px) {
+    :root {
+      /* Typography (font size) */
+      --text-xs: 0.875rem;
+      --text-sm: 0.9375rem;
+      --text-base: 1.0rem;
+      --text-lg: 1.125rem;
+      --text-xl: 1.375rem;
+
+      /* Spacing settings */
+      --container-gutter: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    :root {
+      /* Spacing settings */
+      --container-gutter: 3rem;
+
+      --section-with-border-vertical-spacing: 4rem;
+      --section-with-border-vertical-spacing-tight: 4rem;
+      --section-without-border-vertical-spacing: 6rem;
+      --section-without-border-vertical-spacing-tight: 6rem;
+
+      --section-stack-gap:3rem;
+      --section-stack-gap-tight:3rem;
+    }
+  }
